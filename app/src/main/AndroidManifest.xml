@@ -3,6 +3,7 @@
     package="com.androiddeveloper.webprog26.imagecaching">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -20,6 +21,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".SettingsActivity"></activity>
+        <receiver android:name=".internet_connection_check.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

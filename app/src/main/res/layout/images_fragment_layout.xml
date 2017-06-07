@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+            <ImageView
+                android:id="@+id/iv_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+            <ImageView
+                android:id="@+id/iv_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_load_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_load_images"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="key_pref_caching"
+        android:title="@string/enable_cashing"
+        android:summary="@string/enable_caching_summary"
+        android:defaultValue="false"/>
+    <ListPreference
+        android:key="key_cache_type"
+        android:title="@string/caching_types_title"
+        android:summary="@string/caching_types_summary"
+        android:defaultValue="1"
+        android:dependency="key_pref_caching"
+        android:entries="@array/caching_type_entries"
+        android:entryValues="@array/caching_type_values"/>
+
+</PreferenceScreen>

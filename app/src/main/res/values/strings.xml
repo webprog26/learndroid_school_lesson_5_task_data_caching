@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ImageCaching</string>
+
+    <!--Controls-->
+    <string name="btn_load_images">Load images</string>
+
+    <!--Menu-->
+    <string name="action_settings">Settings</string>
+
+    <!--Preferences-->
+    
+    <!--Enable/ disable caching-->
+    <string name="enable_cashing">Enable caching</string>
+    <string name="enable_caching_summary">Enable to load image from cache when no Internet-connection available</string>
+    
+    <!--Select type of caching-->
+    
+    <string name="caching_types_title">Select caching storage</string>
+    <string name="caching_types_summary">Internal or external (if available) storage</string>
+    
+
+    
+</resources>
